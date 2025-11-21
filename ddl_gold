@@ -1,0 +1,85 @@
+DROP TABLE IF EXISTS gold.dim_customer;
+
+CREATE TABLE gold.dim_customer (
+    Customer_ID NVARCHAR(50) PRIMARY KEY,
+    Policy_Holder_Name NVARCHAR(150),
+    Gender NVARCHAR(50),
+    Age_at_Entry INT,
+    Current_Age INT,
+    Occupation NVARCHAR(150),
+    Smoker_Status NVARCHAR(50),
+    Medical_Exam_Required NVARCHAR(50),
+    Nationality NVARCHAR(100),
+    Township NVARCHAR(100)
+);
+
+
+DROP TABLE IF EXISTS gold.dim_sales_agent;
+
+CREATE TABLE gold.dim_sales_agent (
+    Agent_Code NVARCHAR(50) PRIMARY KEY,
+    Sales_Agent NVARCHAR(150),
+    Agent_Mail NVARCHAR(150),
+    Township NVARCHAR(100)
+);
+
+
+DROP TABLE IF EXISTS gold.dim_regional_manager;
+
+CREATE TABLE gold.dim_regional_manager (
+    Regional_Manager_ID NVARCHAR(50) PRIMARY KEY,
+    Regional_Manager_Name NVARCHAR(150),
+    Mail NVARCHAR(150),
+    Region NVARCHAR(100),
+    States_Covered NVARCHAR(200)
+);
+
+
+DROP TABLE IF EXISTS gold.fact_insurance_policy;
+
+CREATE TABLE gold.fact_insurance_policy (
+    -- From silver.fact_insurance_policy (raw fields)
+    Policy_Number            NVARCHAR(50),
+    Start_Date               DATE,
+    Last_Paid_Date           DATE,
+    Tenure_Years             INT,
+    Date_of_Purchase         DATE,
+    Customer_ID              NVARCHAR(50),
+    Sum_Assured_Amount       DECIMAL(18,6),
+    Premium_Amount           DECIMAL(18,6),
+    Payment_Frequency        NVARCHAR(50),
+    Loan_Eligible            NVARCHAR(50),
+    Loan_Amount_Allowed      DECIMAL(18,6),
+    Underwriting_Expenses    DECIMAL(18,6),
+    Sales_Agent_Code         NVARCHAR(50),
+    Policy_Anniversary_Date  DATE,
+    Claim_ID                 NVARCHAR(50),
+    Policy_Type_Code         NVARCHAR(50),
+    Policy_Code              NVARCHAR(50),
+    Policy_Status            NVARCHAR(50),
+    Township                 NVARCHAR(100),
+    RM_ID                    NVARCHAR(50),
+
+    -- Added fields from joins & calculations
+    Policy_Name              NVARCHAR(200),
+    Policy_Type              NVARCHAR(200),
+
+    AnnualPremium            DECIMAL(18,6),
+    PaymentDuration          INT,
+    TenureDate               DATE,
+    ReturnRate               DECIMAL(18,6),
+
+    Total_Premium_Amount     DECIMAL(18,6),
+    Total_Premium_Paid       DECIMAL(18,6),
+    Total_Premium_Payable    DECIMAL(18,6),
+    Maturity_Amount          DECIMAL(18,6),
+    Profit_Gain              DECIMAL(18,6),
+    Annualized_ROI_Percent   DECIMAL(18,6),
+
+    Matured_in_5_Years       int,
+    Matured_in_10_Years      int,
+    Matured_in_15_Years      int,
+    Matured_in_20_Years      int,
+
+    Payment_Bucket           NVARCHAR(50)
+);
