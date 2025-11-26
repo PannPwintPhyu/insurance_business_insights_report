@@ -8,7 +8,7 @@ This project showcases my practical BI skillset across data modeling, ETL design
 ## 🔗 Live Power BI Dashboard
 
 ➡️ **View Interactive Report**
-[https://app.powerbi.com/view?r=eyJrIjoiMDdkNzA2ZWYtODBkZC00ZGYwLWIzZTgtNmNkNTdjODVmMmFjIiwidCI6IjIyODhlZGEwLWZiMTQtNDVlZS05OTY2LWE4ZGIwNDY2YzUzOSIsImMiOjEwfQ%3D%3D](https://app.powerbi.com/view?r=eyJrIjoiMDdkNzA2ZWYtODBkZC00ZGYwLWIzZTgtNmNkNTdjODVmMmFjIiwidCI6IjIyODhlZGEwLWZiMTQtNDVlZS05OTY2LWE4ZGIwNDY2YzUzOSIsImMiOjEwfQ%3D%3D)
+https://app.powerbi.com/view?r=eyJrIjoiMDI2YjQzZDgtODkwYi00YTM3LTg1YmItZDc0ZjdmZDQ0Njk1IiwidCI6IjhlZjRhZjJkLTkwY2YtNGIzMS1hMTI4LTNmYWE5M2EzMmJjOCIsImMiOjEwfQ%3D%3D
 
 ---
 
