@@ -128,32 +128,32 @@ Power BI consumes the Gold layer fact and dimension tables in Import Mode, enabl
 
 ---
 
-# ❓ Business Questions Answered
+# ❓ Business Questions Answerer
 
-### ** Customer Profitability**
+###  Customer Profitability
 
 * Which customer segments generate the most profit?
 * How much gain/ROI does each customer earn?
 * Which payment frequency creates higher premiums?
 
-### ** Policy & Product Insights**
+###  Policy & Product Insights
 
 * Which policy types generate the highest returns?
 * How do tenure lengths affect maturity value?
 * Which products deliver the strongest ROI?
 
-### ** Regional & Agent Performance**
+###  Regional & Agent Performance
 
 * Which regions/townships contribute the highest premium?
 * Which RM/agents bring in the best customers?
 
-### ** Premium & Trend Analytics**
+###  Premium & Trend Analytics
 
 * Monthly and yearly premium trends
 * Underwriting expense variance
 * Customer count growth over time
 
-### ** Operational Insights**
+###  Operational Insights
 
 * Policies maturing in 5/10/15/20 years
 * Amount paid vs remaining payable
